@@ -74,7 +74,7 @@ function Test(props) {
       setpasswordError('Must enter Password');
       setpasswordTouch(true);
       error++;
-    } else if (password == false) {
+    } else if (password.length < 6) {
       setpasswordError('Enter correct Password');
       setpasswordTouch(true);
       error++;
@@ -130,7 +130,7 @@ function Test(props) {
   };
 
   const onChangePassword = value => {
-    if (password.length < 6) {
+    if (password.length > 6) {
       setpasswordTouch(true);
       return true;
     } else {
@@ -140,7 +140,7 @@ function Test(props) {
   };
 
   const onChangeConfirmPassword = value => {
-    if (confirmPassword.length < 6 || confirmPassword != password) {
+    if (confirmPassword.length > 6 || confirmPassword != password) {
       setconfirmPasswordTouch(true);
       return true;
     } else {
