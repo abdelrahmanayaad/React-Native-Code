@@ -68,7 +68,7 @@ function Test(props) {
       setPhoneTouch(true);
     }
 
-    //password
+    // password
 
     if (password.length == 0) {
       setpasswordError('Must enter Password');
@@ -83,7 +83,7 @@ function Test(props) {
       setpasswordTouch(true);
     }
 
-    //password
+    // confirmPassword
 
     if (confirmPassword.length == 0) {
       setconfirmPasswordError('Must enter confirm Password');
