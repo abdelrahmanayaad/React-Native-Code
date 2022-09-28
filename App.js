@@ -1,14 +1,23 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
-
+import {Text, View, StyleSheet} from 'react-native';
+import SignupScreen from './src/screens/SignupScreen';
+import Test from './src/screens/Test';
 export class App extends Component {
   render() {
     return (
-      <View>
-        <Text>Hello World !</Text>
-      </View>
+      <>
+        <Test />
+      </>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: 20,
+  },
+});
 
 export default App;
