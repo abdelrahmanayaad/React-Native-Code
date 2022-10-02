@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import SignupScreen from './src/screens/SignupScreen';
-import Test from './src/screens/Test';
+import {GeneralButton, GeneralInput} from './src/components';
+import SignupScreen from './src/screens/GeneralAuth/SignupScreen.js';
 export class App extends Component {
   render() {
     return (
       <>
-        <Test />
+        <SignupScreen />
       </>
     );
   }
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
   },
 });
 
