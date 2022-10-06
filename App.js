@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
-import {GeneralButton, GeneralInput} from './src/components';
-import SignupScreen from './src/screens/GeneralAuth/SignupScreen.js';
+import MapScreen from './src/screens/Maps/Maps';
+import Counter from './src/screens/Counter';
 export class App extends Component {
   render() {
     return (
-      <>
-        <SignupScreen />
-      </>
+      <View style={styles.container}>
+        <Counter />
+      </View>
     );
   }
 }
@@ -15,8 +15,6 @@ export class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    paddingHorizontal: 15,
   },
 });
 
