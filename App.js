@@ -1,21 +1,15 @@
-import React, {Component} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
-import MapScreen from './src/screens/Maps/Maps';
-import Counter from './src/screens/Counter';
-export class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Counter />
-      </View>
-    );
-  }
+import React, {useState} from 'react';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import Task from './src/Task/Task';
+import DropdownComponent from './src/Task/DropDown';
+
+function App() {
+  return (
+    <View>
+      <Task />
+    </View>
+  );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
+const styles = StyleSheet.create({});
 export default App;

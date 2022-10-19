@@ -33,6 +33,8 @@ function SignupScreen(props) {
 
   // Functions
 
+  // onChangeText... -> real correct error in the same time if he write right
+
   function onChangeTextEmail(val) {
     const reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     return reg.test(val);
@@ -122,6 +124,8 @@ function SignupScreen(props) {
     );
   }
 
+  // onChange... -> when he start write in textInput
+
   const onChangeEmail = val => {
     setFormObj({...formObj, email: val});
     setTouchedEmail(true);
@@ -172,14 +176,14 @@ function SignupScreen(props) {
         <View style={styles.textInputsView}>
           {input(
             'Email',
-            onChangeEmail,
-            emailError,
-            onChangeTextEmail(formObj.email)
-              ? 'md-checkmark-sharp'
-              : touchedEmail
+            onChangeEmail, // onChange when he start write in input
+            emailError, // error under textInput
+            onChangeTextEmail(formObj.email) // check after he wrote if it right or not to remove icon wrong or correct
+              ? 'md-checkmark-sharp' // true ? icon === correct
+              : touchedEmail //false -> check if touched true if true iconName => wrong else null
               ? 'md-close-sharp'
               : null,
-            onChangeTextEmail(formObj.email) ? 'green' : 'red',
+            onChangeTextEmail(formObj.email) ? 'green' : 'red', // -> Iocn color
           )}
 
           {input(
@@ -198,10 +202,10 @@ function SignupScreen(props) {
             onChangePassword,
             passwordError,
             passIcon ? 'eye-off' : 'eye',
-            null,
-            passIcon,
+            null, // color of icon
+            passIcon, // secureTextEntry -> passIcon == true ? "secure" : "not secure"
             () => {
-              setPassIcon(!passIcon);
+              setPassIcon(!passIcon); // if i click on eye icon convert it to oppsite
             },
           )}
           {input(
