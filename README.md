@@ -6,4 +6,4 @@
 
 <!-- ![image](https://www.linkpicture.com/q/Custom-Bottom-Tabs.jpg) -->
 
-<img src="https://www.linkpicture.com/q/Custom-Bottom-Tabs.jpg" alt="drawing" width="300" />
+<img src="https://www.linkpicture.com/q/Custom-Bottom-tab.jpg" alt="drawing" width="300" />
