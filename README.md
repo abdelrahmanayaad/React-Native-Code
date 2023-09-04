@@ -4,4 +4,6 @@
 
 ### Custom Bottom Tab Navigator in React Native
 
-[![image](https://www.linkpicture.com/q/Custom-Bottom-Tabs.jpg)](https://www.linkpicture.com/view.php?img=LPic64f6681e04a231696748887)
+<!-- ![image](https://www.linkpicture.com/q/Custom-Bottom-Tabs.jpg) -->
+
+<img src="https://www.linkpicture.com/q/Custom-Bottom-Tabs.jpg" alt="drawing" width="300" />
