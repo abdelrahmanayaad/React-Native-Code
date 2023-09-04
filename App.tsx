@@ -1,13 +1,8 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import AppContainer from './src/navigation/AppContainer'
 
 const App = () => {
-  return (
-    <View>
-      <Text>Abdelrahman Ayad</Text>
-      <Text></Text>
-    </View>
-  )
+  return <AppContainer/>
 }
 
 export default App
