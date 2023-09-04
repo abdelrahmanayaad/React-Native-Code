@@ -23,7 +23,7 @@ const AppContainer = () => {
             height: 70,
             borderRadius: 10,
             elevation: 1,
-            backgroundColor: '#eee',
+            backgroundColor: '#000',
           },
           tabBarShowLabel: false,
         }}>
@@ -39,11 +39,11 @@ const AppContainer = () => {
                     style={{
                       height: 25,
                       width: 25,
-                      tintColor: focused ? '#5E7CC2' : '#aaa',
+                      tintColor: focused ? '#7DAEDF' : '#aaa',
                     }}
                   />
                   <Text
-                    style={{fontSize: 10, color: focused ? '#5E7CC2' : '#aaa'}}>
+                    style={{fontSize: 10, color: focused ? '#7DAEDF' : '#aaa'}}>
                     Home
                   </Text>
                 </View>
@@ -63,11 +63,11 @@ const AppContainer = () => {
                     style={{
                       height: 25,
                       width: 25,
-                      tintColor: focused ? '#5E7CC2' : '#aaa',
+                      tintColor: focused ? '#7DAEDF' : '#aaa',
                     }}
                   />
                   <Text
-                    style={{fontSize: 10, color: focused ? '#5E7CC2' : '#aaa'}}>
+                    style={{fontSize: 10, color: focused ? '#7DAEDF' : '#aaa'}}>
                     Chat
                   </Text>
                 </View>
@@ -89,7 +89,7 @@ const AppContainer = () => {
                     height: 50,
                     width: 50,
                     borderRadius: 25,
-                    backgroundColor: focused ? '#5E7CC2' : '#ddd',
+                    backgroundColor: focused ? '#5E7CC2' : '#bbb',
                     justifyContent: 'center',
                   }}>
                   <Image
@@ -117,11 +117,11 @@ const AppContainer = () => {
                     style={{
                       height: 25,
                       width: 25,
-                      tintColor: focused ? '#5E7CC2' : '#aaa',
+                      tintColor: focused ? '#7DAEDF' : '#aaa',
                     }}
                   />
                   <Text
-                    style={{fontSize: 10, color: focused ? '#5E7CC2' : '#aaa'}}>
+                    style={{fontSize: 10, color: focused ? '#7DAEDF' : '#aaa'}}>
                     Search
                   </Text>
                 </View>
@@ -141,11 +141,11 @@ const AppContainer = () => {
                     style={{
                       height: 25,
                       width: 25,
-                      tintColor: focused ? '#5E7CC2' : '#aaa',
+                      tintColor: focused ? '#7DAEDF' : '#aaa',
                     }}
                   />
                   <Text
-                    style={{fontSize: 10, color: focused ? '#5E7CC2' : '#aaa'}}>
+                    style={{fontSize: 10, color: focused ? '#7DAEDF' : '#aaa'}}>
                     Setting
                   </Text>
                 </View>
